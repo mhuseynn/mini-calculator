@@ -55,9 +55,12 @@ namespace Calculator
                 Console.WriteLine("Subtraction [2]");
                 Console.WriteLine("Multiply    [3]");
                 Console.WriteLine("Division    [4]");
+		Console.WriteLine("Exit        [5]");
 
                 Console.Write("\nSelect: ");
                 int select = Convert.ToInt32(Console.ReadLine());
+		if (select==5) break;
+				
                 Console.Clear();
                 Console.Write("Num1: ");
                 double num1 = Convert.ToDouble(Console.ReadLine());
